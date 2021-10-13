@@ -1,0 +1,34 @@
+{
+  "React Functional useState Component": {
+    "scope": "javascript",
+    "prefix": "rfsc",
+    "body": [
+      "import React, { useState } from 'react'",
+      "",
+      "export default function ${TM_FILENAME_BASE}() {",
+      "  return (",
+      "    <div>",
+      "     ",
+      "    </div>",
+      "  )",
+      "}"
+    ],
+    "description": "Create a react functional component importing useState."
+  },
+  "React Functional useState useEffect Component": {
+    "scope": "javascript",
+    "prefix": "rfsec",
+    "body": [
+      "import React, { useState, useEffect } from 'react'",
+      "",
+      "export default function ${TM_FILENAME_BASE}() {",
+      "  return (",
+      "    <div>",
+      "     ",
+      "    </div>",
+      "  )",
+      "}"
+    ],
+    "description": "Create a react functional component importing both useState and useEffect."
+  }
+}

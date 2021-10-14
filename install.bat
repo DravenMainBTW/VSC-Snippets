@@ -6,7 +6,7 @@ color 04
 echo ---- WARNING ----
 echo.
 echo This script will only work on windows machines.
-echo Also it MUST be placed in the same drive as your roaming folder as this is where snippets are stored.
+echo Also it MUST be placed in the same drive as your AppData folder as this is where snippets are stored.
 echo If prompted on install if location is file or directory specify directory.
 echo USE AT OWN RISK.
 echo.

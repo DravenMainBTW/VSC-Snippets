@@ -26,7 +26,7 @@ goto commonexit
 cls
 color 2
 echo Installing...
-xcopy %cd%\VSCSNIPPETS-V1.code-snippets %UserProfile%\AppData\Roaming\Code\User\snippets
+xcopy "%cd%\VSCSNIPPETS-V1.code-snippets" "%UserProfile%\AppData\Roaming\Code\User\snippets"
 goto commonexit
 
 :exitcommand

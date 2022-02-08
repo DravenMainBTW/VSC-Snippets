@@ -3,7 +3,7 @@ Useful code snippets that I frequently use in VSC with added batch install scrip
 
 # Download
 ```
-git clone https://github.com/DravenMainBTW/VSC-Snippets.git
+git clone https://github.com/daniel-j-crewe/VSC-Snippets.git
 ```
 
 # Setup

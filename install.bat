@@ -14,19 +14,43 @@ echo -----------------
 echo.
 echo CURRENT DRIVE LOCATION: %CD:~0,3%
 echo.
-set /p consent= "PROCEED (Y/N): "
-if /i "%consent%"=="y" goto installcommand
-if /i "%consent%"=="n"  goto exitcommand
+echo INSTALL OPTIONS
+echo.
+echo 1. Install frontend and backend
+echo 2. Install only frontend
+echo 3. Install only backend
+echo 4. Exit install
+echo.
+set /p consent= "INPUT DECISION: "
+if /i "%consent%"=="1" goto installboth
+if /i "%consent%"=="2"  goto installfront
+if /i "%consent%"=="3"  goto installback
+if /i "%consent%"=="2"  goto exitcommand
 
 cls
 echo Input not recognised...
 goto commonexit
 
-:installcommand
+:installboth
 cls
 color 2
-echo Installing...
+echo Installing Both Frontend And Backend...
 xcopy "%cd%\VSCSNIPPETS-FRONTEND-V1.code-snippets" "%UserProfile%\AppData\Roaming\Code\User\snippets"
+xcopy "%cd%\VSCSNIPPETS-BACKEND-V1.code-snippets" "%UserProfile%\AppData\Roaming\Code\User\snippets"
+goto commonexit
+
+:installfront
+cls
+color 2
+echo Installing Frontend Only...
+xcopy "%cd%\VSCSNIPPETS-FRONTEND-V1.code-snippets" "%UserProfile%\AppData\Roaming\Code\User\snippets"
+goto commonexit
+
+:installback
+cls
+color 2
+echo Installing Backend Only...
+xcopy "%cd%\VSCSNIPPETS-BACKEND-V1.code-snippets" "%UserProfile%\AppData\Roaming\Code\User\snippets"
 goto commonexit
 
 :exitcommand

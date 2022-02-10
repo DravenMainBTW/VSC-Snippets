@@ -1,5 +1,5 @@
 # VSC Snippets
-Useful code snippets that I frequently use in VSC with added batch install script for windows devices.
+Useful web development code snippets that I frequently use in Visual Studio Code split into separate files for front and back end with added batch install script for windows devices.
 
 # Download
 ```
@@ -19,7 +19,7 @@ Or open the repo in file explorer and run `install.bat`.
 
 
 ### Installing Manually
-Copy the file `VSCSNIPPETS-V1.code-snippets` in this repo to where you VSC snippets are stored. An example of the pathway on windows:
+Copy `VSCSNIPPETS-FRONTEND-V1.code-snippets` and / or `VSCSNIPPETS-BACKEND-V1.code-snippets` in this repo to where you VSC snippets are stored. An example of the pathway on windows:
 
 ```
 C:\Users\[ACCOUNT_NAME_HERE]\AppData\Roaming\Code\User\snippets
